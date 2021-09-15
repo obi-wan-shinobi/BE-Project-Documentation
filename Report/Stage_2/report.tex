@@ -92,7 +92,7 @@ input/.style    =  {coordinate,node distance=2em},
 {\bfseries A  PROJECT REPORT ON \\}
  \vspace*{2\baselineskip}
 {\bfseries \fontsize{16}{12} \selectfont Astronomical Image colorization and super-resolution using GANs \\ \vspace*{2\baselineskip}}
-{\fontsize{12}{12} \selectfont SUBMITTED TO SAVITRIBAI PHULE PUNE UNIVERSITY, PUNE IN PARTIAL FULFILMENT OF THE REQUIREMENTS FOR THE AWARD OF THE DEGREE \\ 
+{\fontsize{12}{12} \selectfont SUBMITTED TO SAVITRIBAI PHULE PUNE UNIVERSITY, PUNE IN PARTIAL FULFILMENT OF THE REQUIREMENTS FOR THE AWARD OF THE DEGREE \\
 OF
 
 \vspace*{2\baselineskip}}
@@ -103,8 +103,8 @@ Engineering) \\
 \vspace*{1\baselineskip}}
 Shreyas Kalvankar  \hspace{25 mm} Exam No: B150134261 \\
 Hrushikesh Pandit \hspace{26 mm} Exam No: B150134296  \\
-Pranav Parwate \hspace{30 mm} Exam No: B150134299 \\
-Atharva Patil \hspace{34 mm} Exam No: B150134303\\
+Pranav Parwate \hspace{31 mm} Exam No: B150134299 \\
+Atharva Patil \hspace{35 mm} Exam No: B150134303\\
 \vspace*{2\baselineskip}
 
 %{\bfseries \fontsize{14}{12} \selectfont Under The Guidance of \\
@@ -112,16 +112,16 @@ Atharva Patil \hspace{34 mm} Exam No: B150134303\\
 %Prof. Dr. S.M. Kamalapur\\
 
 \includegraphics[width=100pt]{collegelogo.png} \\
-{\bfseries \fontsize{16}{12} \selectfont DEPARTMENT OF COMPUTER ENGINEERING \\ 
+{\bfseries \fontsize{16}{12} \selectfont DEPARTMENT OF COMPUTER ENGINEERING \\
  \vspace*{1\baselineskip}
 
-K. K. Wagh Institute Of Engineering Education \& Research\\ 
+K. K. Wagh Institute Of Engineering Education \& Research\\
 }
  \vspace*{1\baselineskip}
-{\bfseries \fontsize{12}{12} \selectfont 
-Hirabai Haridas Vidyanagari, Amrutdham, Panchavati, Nashik-422003 
+{\bfseries \fontsize{12}{12} \selectfont
+Hirabai Haridas Vidyanagari, Amrutdham, Panchavati, Nashik-422003
 \vspace*{1\baselineskip}}
-{\bfseries \fontsize{12}{12} \selectfont 
+{\bfseries \fontsize{12}{12} \selectfont
 SAVITRIBAI PHULE PUNE UNIVERSITY\\
 2020-2021
 }
@@ -143,14 +143,14 @@ SAVITRIBAI PHULE PUNE UNIVERSITY\\
 \end{figure}
 
 {\bfseries \fontsize{14}{12} \selectfont \centerline{K. K. Wagh Institute Of Engineering Education \& Research}
-\vspace*{1\baselineskip}} 
+\vspace*{1\baselineskip}}
 
 
-{\bfseries \fontsize{14}{12} \selectfont \centerline{CERTIFICATE} 
-} 
+{\bfseries \fontsize{14}{12} \selectfont \centerline{CERTIFICATE}
+}
 
 \centerline{This is to certify that the Project Entitled}
-\vspace*{1\baselineskip} 
+\vspace*{1\baselineskip}
 
 
 {\bfseries \fontsize{14}{12} \selectfont \centerline{Astronomical Image colorization and super-resolution using GANs}
@@ -159,30 +159,30 @@ SAVITRIBAI PHULE PUNE UNIVERSITY\\
 \centerline{Submitted by}
 \vspace*{1\baselineskip}
 \centerline{Shreyas Kalvankar  \hspace{25 mm} Exam No: B150134261}
-\centerline{Hrushikesh Pandit \hspace{26 mm} Exam No: B150134296 }
-\centerline{Pranav Parwate \hspace{30 mm} Exam No: B150134299}
-\centerline{Atharva Patil \hspace{34 mm} Exam No: B150134303}
+\centerline{Hrushikesh Pandit \hspace{27 mm} Exam No: B150134296 }
+\centerline{Pranav Parwate \hspace{31 mm} Exam No: B150134299}
+\centerline{Atharva Patil \hspace{35 mm} Exam No: B150134303}
 \vspace*{1\baselineskip}
 is a bonafide work carried out by Students under the supervision of Prof. Dr. S.M. Kamalapur and it is submitted towards the partial fulfilment of the requirement of Bachelor of Engineering (Computer Engineering) Project during academic year 2020-21.\\
 
 \bgroup
 \def\arraystretch{0.7}
 \begin{tabular}{c c }
-Prof. Dr. S. M. Kamalapur &  \hspace{50 mm} Prof. S. S. Sane \\								
+Prof. Dr. S. M. Kamalapur &  \hspace{50 mm} Prof. S. S. Sane \\
 Internal Guide   &  \hspace{50 mm} H.O.D \\
 Dept. of Computer Engg.  &	\hspace{50 mm}Dept. of Computer Engg.  \\
 \end{tabular}
 %}
-\vspace*{1\baselineskip} 
+\vspace*{1\baselineskip}
 \begin{center}
-%\fontsize{12}{18}\selectfont 
+%\fontsize{12}{18}\selectfont
 {
 Dr. K. N. Nandurkar \\
 Principal\\
 }
 \end{center}
 Place: Nashik\\
-Date: 
+Date:
 %}
 
 {  \newpage {\bfseries \fontsize{14}{12} \selectfont \centerline{Acknowledgments}
@@ -777,9 +777,9 @@ Team of 4 members
 	$$
 
 	$D_{\theta_d}(G_{\theta_g}(I^{LR}))$ is the probability that the reconstructed image $G_{\theta_g}(I^{LR}))$ is a natural HR image. For beter gradient behavior, we minimize $-\log D_{\theta_d}(G_{\theta_g}(I^{LR}))$ instead of $\log \big[1-D_{\theta_d}(G_{\theta_g}(I^{LR}))\big]$.
-	
+
 \pagebreak
-	
+
 \section{Mathematical Model}
 
 \subsection{Artificial Neural Networks}
@@ -853,7 +853,7 @@ With conditional GAN, both generator and discriminator are conditioning on the i
 	\[
 		\min_{\theta_g}\Big[-\log(D_{\theta_d}(x,G_{\theta_g}(x)))+\lambda \Vert G_{\theta_g}(x) - y \Vert_1 \Big]
 	\]
-	
+
 
 \pagebreak
 \section{UML Diagrams}
@@ -879,10 +879,10 @@ With conditional GAN, both generator and discriminator are conditioning on the i
 		\item We implement an instance of \texttt{Keras Image Data Generator} to convert the raw data into training data
 		\item We create two \textit{data generators}, one for generating gray scale images and the other for generating subsequent RGB image
 		\item We create another data pre-processor that converts the given RGB image into L*a*b color space
-		\item The images are then resized to a dimension of $64 \times 64$ 
+		\item The images are then resized to a dimension of $64 \times 64$
 		\item We get a vector of image batches which will be the input to the training pipeline
 	\end{itemize}
-	
+
 	\item \textbf{Training Pipeline}
 	\begin{itemize}
 		\item The training pipeline consists of multiple phases
@@ -919,9 +919,9 @@ With conditional GAN, both generator and discriminator are conditioning on the i
 
 \section{Algorithm Details}
 \subsection{Generative Networks}
-\hspace*{0.25 in}A generative model is a class of statistical models that are a contrast to the classifier models dubbed as discriminative models. Informally speaking, a generative model creates new data instances based on the distribution of the data itself. Generative models tackle a more difficult task, i.e. to model data. A generative model might capture correlations among underlying distribution and draw conclusions. \cite{goodfellow2014generative} proposed the most famous type of generative model, i.e. Generative Adversarial Network, which is composed of two smaller networks called a discriminator and a generator. The generator's task is to create fake images that convince the discriminator and the discriminator usually classifies between real and fake data. 
+\hspace*{0.25 in}A generative model is a class of statistical models that are a contrast to the classifier models dubbed as discriminative models. Informally speaking, a generative model creates new data instances based on the distribution of the data itself. Generative models tackle a more difficult task, i.e. to model data. A generative model might capture correlations among underlying distribution and draw conclusions. \cite{goodfellow2014generative} proposed the most famous type of generative model, i.e. Generative Adversarial Network, which is composed of two smaller networks called a discriminator and a generator. The generator's task is to create fake images that convince the discriminator and the discriminator usually classifies between real and fake data.
 \subsection{Adversarial Networks}
-\hspace*{0.25 in}With two networks that are neural networks, the adversarial modeling framework is the most straightforward to apply. A distribution $p_g$ over data $x$ is called the generator's distribution. To learn this distribution, we define some prior noise on the input variables $p_z(z)$ and represent a mapping to a space with $G(z; \theta_g)$, where $G$ is a differential function of neural network parameterized by $\theta_g$. Another neural network $D(x;\theta_d)$ is defined such that it provides a scalar output, representing the probability that data $x$ comes from the input distribution rather than $p_g$. The goal is to train $D$ to maximize the probability of assigning the correct label to both training examples and samples from $G$. The network $G$ is trained to minimize $log(1-D(G(z))$. 
+\hspace*{0.25 in}With two networks that are neural networks, the adversarial modeling framework is the most straightforward to apply. A distribution $p_g$ over data $x$ is called the generator's distribution. To learn this distribution, we define some prior noise on the input variables $p_z(z)$ and represent a mapping to a space with $G(z; \theta_g)$, where $G$ is a differential function of neural network parameterized by $\theta_g$. Another neural network $D(x;\theta_d)$ is defined such that it provides a scalar output, representing the probability that data $x$ comes from the input distribution rather than $p_g$. The goal is to train $D$ to maximize the probability of assigning the correct label to both training examples and samples from $G$. The network $G$ is trained to minimize $log(1-D(G(z))$.
 
 \SetAlgoNoLine%
 \begin{algorithm}[!htb]
@@ -937,7 +937,7 @@ With conditional GAN, both generator and discriminator are conditioning on the i
  $\bullet$ Sample minibatch of $m$ noise samples $\{z^{(1)}\dots z^{(m)}\}$ from noise prior to $p_g(z)$.\\
  $\bullet$ Update generator by descending its stochastic gradient:
  		$$
-			\bigtriangledown_{\theta_g}\frac{1}{m}\sum_{i=1}^m log \Big( 1 - D \Big( G \Big( z^{(i)} \Big) \Big) \Big) 
+			\bigtriangledown_{\theta_g}\frac{1}{m}\sum_{i=1}^m log \Big( 1 - D \Big( G \Big( z^{(i)} \Big) \Big) \Big)
 		$$
  }
  \caption{Minibatch stochastic gradient descent training of generative adversarial networks. The number of steps to apply to the discriminator, $k$, is a hyperparameter.}
@@ -982,8 +982,8 @@ We train models using both color spaces and empirically show the significance of
 
 \chapter{Software Testing}
 \section{Types of testing}
-\hspace{0.25 in}We test the modules of our entire setup to ensure that the modules are performing as they're intended to. 
-We perform a kind of unit testing to evaluate the output of every function in the code. 
+\hspace{0.25 in}We test the modules of our entire setup to ensure that the modules are performing as they're intended to.
+We perform a kind of unit testing to evaluate the output of every function in the code.
 \section{Test Cases and Test Results}
 \subsection{Data Gathering and Pre-processing}
 \begin{itemize}
@@ -1016,7 +1016,7 @@ We perform a kind of unit testing to evaluate the output of every function in th
 		\item Test Case 2: Pre-processing System: RGB to L*a*b conversion
 	\begin{itemize}
 		\item Test Case Description:\\
-			The pre-processing function takes in a stream of raw data and converts the images into a numpy array with dimensions $n \times 64 \times 64 \times 3$ where $n$ is the batch size. The output is an image tensor in L*a*b color space. The L channel is provided for the grayscale input 
+			The pre-processing function takes in a stream of raw data and converts the images into a numpy array with dimensions $n \times 64 \times 64 \times 3$ where $n$ is the batch size. The output is an image tensor in L*a*b color space. The L channel is provided for the grayscale input
 		\item Status: \textbf{Pass}
 	\end{itemize}
 		\item Test Case 3: Pre-processing System: L*a*b to RGB conversion
@@ -1100,7 +1100,7 @@ We perform a kind of unit testing to evaluate the output of every function in th
 		$\bullet$ A csv file containing history of the entire training session\\
 		$\bullet$ Save the model weights on a best performance basis by keeping track of the earlier losses\\
 		$\bullet$ Keep track of the convergence and stop the model training if the model converges early
-		
+
 		\item Status: \textbf{Pass}
 	\end{itemize}
 \end{itemize}
@@ -1159,7 +1159,7 @@ Each image is a JPG image with dimensions of $256\times 256$ pixels and contains
 	\label{fig: basic_unet_curves}
 \end{figure}
 
-Figure \ref{fig: u-net_loss} and \ref{fig: disc_cus_loss} shows that the generator converges quite nicely. The discriminator on the other hand oscillates because of the convergence that the generator shows. GAN losses are pretty non-intuitive but we can draw some observations from the loss curves. It seems that the pattern of oscillation and convergence repeats when networks are trained in an adversarial fashion. 
+Figure \ref{fig: u-net_loss} and \ref{fig: disc_cus_loss} shows that the generator converges quite nicely. The discriminator on the other hand oscillates because of the convergence that the generator shows. GAN losses are pretty non-intuitive but we can draw some observations from the loss curves. It seems that the pattern of oscillation and convergence repeats when networks are trained in an adversarial fashion.
 
 \begin{figure}[!htb]
 	\centering
@@ -1180,7 +1180,7 @@ Figure \ref{fig: u-net_loss} and \ref{fig: disc_cus_loss} shows that the generat
 	\label{fig: resnet18_curves}
 \end{figure}
 
-Figure \ref{fig: resnet_loss} and \ref{fig: resnet50_disc_loss} show the same trend repeating even when trained using pre-trained weights with state of the art networks that show excellent results. It is observed that the ResNet U-net with a pre-trained ResNet-18 for its backbone converges decently in the beginning but later shows spikes when nearing the end of training loop. The ResNet50 used as a discriminator shows identical behavior as the custom discriminator above refer fig.\ref{fig: disc_cus_loss}. 
+Figure \ref{fig: resnet_loss} and \ref{fig: resnet50_disc_loss} show the same trend repeating even when trained using pre-trained weights with state of the art networks that show excellent results. It is observed that the ResNet U-net with a pre-trained ResNet-18 for its backbone converges decently in the beginning but later shows spikes when nearing the end of training loop. The ResNet50 used as a discriminator shows identical behavior as the custom discriminator above refer fig.\ref{fig: disc_cus_loss}.
 
 We draw some conclusions based on our understanding of the plots. It seems that the loss convergence doesn't signify whether the model is predicting expected results. The loss function just converges to the minimum value that the cost function descends to, permitted by the learning rate. It would normally signify that the GAN has found some optimum point in the vector space that is at the lowest potential and cant decrease any further. It essentially means that the GAN has leaned enough. Due to the large number of dimensions, owing to the high amount of trainable variables, such combinations, where the function converges, can be huge in volume. Thus, these numbers don't provide any better understanding of the bias or variance the model is facing. Also, we discover that if the loss hasn't converged well, it doesn't necessarily mean that the model hasn't learned anything. On visual inspection, the generated results show similar results to the ground truth, even with high generator losses. This might be due to presence of a content loss parameter in the loss function where we try to minimize the function by  minimizing the L1 norm between the generator predictions and target.
 
@@ -1195,9 +1195,9 @@ The discriminator shows an increase in the objective loss function in the initia
 	\label{color_results}
 \end{figure}
 
-From figure \ref{color_results} we observe that on this particular example, the Basic U-net performs better at predicting results that closely map to the ground truth but the fine-tuned ResNet-18 shows promising results over a larger set of inputs. It can also be observed that the Basic U-net architecture does a decent job of faking the sharpness in the original image and that makes the image appear more realistic as compared to rather blurry outputs from the other networks. 
+From figure \ref{color_results} we observe that on this particular example, the Basic U-net performs better at predicting results that closely map to the ground truth but the fine-tuned ResNet-18 shows promising results over a larger set of inputs. It can also be observed that the Basic U-net architecture does a decent job of faking the sharpness in the original image and that makes the image appear more realistic as compared to rather blurry outputs from the other networks.
 
-We also observe that the model trained in the RGB color space performs poorly at predicting values of the three color channels and that results in dominance of one channel (blue in this case) over others. This causes the output, even though reconstructed quite accurately, to have a varied color pattern with high emphasis on one color channel. This might be because of presence of deep layers which cause gradients of certain colors to diminish over time, causing the model to be strongly biased towards the blue color in this case. An increase in the volume of training data and some random pixel shuffling in forward propagation might solve this problem. 
+We also observe that the model trained in the RGB color space performs poorly at predicting values of the three color channels and that results in dominance of one channel (blue in this case) over others. This causes the output, even though reconstructed quite accurately, to have a varied color pattern with high emphasis on one color channel. This might be because of presence of deep layers which cause gradients of certain colors to diminish over time, causing the model to be strongly biased towards the blue color in this case. An increase in the volume of training data and some random pixel shuffling in forward propagation might solve this problem.
 
 The pre-trained ResNet18 U-net performs decently with the weights gathered by training it over the COCO dataset. The model still lacks the specific coloring intuition in astronomical images and plainly colors specific parts of the images in light colors, leaving majority of the image unaltered. This causes the images to have a slight gray tinge.
 
@@ -1241,7 +1241,7 @@ Figure \ref{fig: comparisons} shows how the other models perform in different co
 	\caption{Results of fine-tuned ResNet18 in L*a*b colorspace compared with ground truth images}
 \end{figure}
 \pagebreak
-Figure \ref{fig: main_color_samples} shows the ground truth images and figure \ref{fig: resnet18_full} shows the predictions of the ResNet18 full trained model in the L*a*b color space. This model seems to perform best, visually. 
+Figure \ref{fig: main_color_samples} shows the ground truth images and figure \ref{fig: resnet18_full} shows the predictions of the ResNet18 full trained model in the L*a*b color space. This model seems to perform best, visually.
 \pagebreak
 \begin{figure}[!htb]
 	\centering
@@ -1251,14 +1251,14 @@ Figure \ref{fig: main_color_samples} shows the ground truth images and figure \r
 		\caption{Basic U-net}
 		\label{fig: u-net_samples}
 	\end{subfigure}
-		
+
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/samples_pre-trained}
 		\caption{ResNet18 pre-trained L*a*b}
 		\label{fig: resnet18_pre}
 	\end{subfigure}
-		
+
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/samples_coco}
@@ -1271,7 +1271,7 @@ Figure \ref{fig: main_color_samples} shows the ground truth images and figure \r
 
 \pagebreak
 
-To quantitatively estimate the model performance, we measure the L1 and L2 distance between the predictions and the ground truth images in both RGB as well as L*a*b colorspace. 
+To quantitatively estimate the model performance, we measure the L1 and L2 distance between the predictions and the ground truth images in both RGB as well as L*a*b colorspace.
 
 \input{tables/colorization_results}
 
@@ -1279,11 +1279,11 @@ Table \ref{color_results} shows that the RGB color space performs poorly on the 
 
 \input{tables/channel_wise_color}
 
-Table \ref{tab:channel_wise_results} shows the RGB channel averages of the outputs produced by the fine tuned model. It can be observed that the feature embeddings produced by the model in *a, *b color spaces maps to the green channel with the least error. This might be indicative that the model is performing poorly on images that have a high content of red-blue colors. 
+Table \ref{tab:channel_wise_results} shows the RGB channel averages of the outputs produced by the fine tuned model. It can be observed that the feature embeddings produced by the model in *a, *b color spaces maps to the green channel with the least error. This might be indicative that the model is performing poorly on images that have a high content of red-blue colors.
 
-To further evaluate the actual outputs produced in the L*a*b color space, we compare the *a, *b channels of the ResNet18 architectures. 
+To further evaluate the actual outputs produced in the L*a*b color space, we compare the *a, *b channels of the ResNet18 architectures.
 
-\input{tables/lab_color_results} 
+\input{tables/lab_color_results}
 In table \ref{tab:lab_color_results}, L1 distance, we can see the performance of fine-tuned model to be better in channel *a but poor in *b compared to the pre-trained model. The L2 distance metric rules out the possibility of the fine-tuned model performing better than the pre-trained model. In reality, the fine-tuned model is orders of magnitude better at predicting output abstractions with the L channel as its input, thus contradicting the quantitative results.
 
 \input{tables/RGBchannel_wise_color}
@@ -1298,7 +1298,7 @@ We can observe the comparative results of ResNet18 pre-trained model and the fin
 	\label{fig: sr_results}
 \end{figure}
 
-Figure \ref{fig: sr_results} shows how the networks perform on the task of predicting pixels while upscaling of the image. All the networks perform really well and its difficult to distinguish the outputs visually. It may be observed that the fine-tuned network produces images that look slightly better than the other counter-parts. The best performing network seems to be the WDSR-GAN with a very little error in predicting the output. 
+Figure \ref{fig: sr_results} shows how the networks perform on the task of predicting pixels while upscaling of the image. All the networks perform really well and its difficult to distinguish the outputs visually. It may be observed that the fine-tuned network produces images that look slightly better than the other counter-parts. The best performing network seems to be the WDSR-GAN with a very little error in predicting the output.
 
 \begin{figure}[!htb]
 	\centering
@@ -1308,7 +1308,7 @@ Figure \ref{fig: sr_results} shows how the networks perform on the task of predi
 		\caption{Input Distribution}
 		\label{fig: sr_input_samples}
 	\end{subfigure}
-		
+
 	\begin{subfigure}[b]{0.8\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{figures/samples_SRGAN}
@@ -1319,9 +1319,9 @@ Figure \ref{fig: sr_results} shows how the networks perform on the task of predi
 	\label{fig: sr_comparisons}
 \end{figure}
 
-It is evident that the model produces acceptable results on visual inspection. The main reason behind this might, again, be the random pixel shuffling between every upscaling pass. 
+It is evident that the model produces acceptable results on visual inspection. The main reason behind this might, again, be the random pixel shuffling between every upscaling pass.
 
-As opposed to colorization, super-resolution needs a quantitative estimation to determine which model performs best among the give models. 
+As opposed to colorization, super-resolution needs a quantitative estimation to determine which model performs best among the give models.
 
 \input{tables/super-resolution_results}
 
