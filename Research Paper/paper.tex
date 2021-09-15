@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{hyperref} 
+\hypersetup{colorlinks,linkcolor={blue},citecolor={blue},urlcolor={red}} 
 \usepackage{xcolor}
 \usepackage{subcaption}
 \usepackage{multirow}
@@ -16,9 +17,6 @@
 \begin{document}
 
 \title{Astronomical Image colorization and up-scaling with generative adversarial networks\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
-\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Shreyas Kalvankar \IEEEauthorrefmark{1}}
@@ -240,7 +238,7 @@ To quantitatively estimate the model performance, we measure the L1 and L2 dista
 
 \input{tables/colorization_results}
 
-Table \ref{color_results} shows that the RGB color space performs poorly on the task of colorization. In terms of the L1 distance, the best performance is achieved on the ResNet18 U-net with pre-trained weights. This goes to prove the unreliability of distance metrics in model performance evaluation. The model, although quantitatively, performs better than the fine-tuned model but in reality, fails to produce images that might be visually appealing. The L2 distance metric shows how the fine-tuned model might, in reality, be fitting slightly better over the data to predict correct color combination as its output. We still consider the results from the fine tuned model to be better than the other performing models and further investigate the per-channel predictions by the model.
+Figure \ref{color_results} shows that the RGB color space performs poorly on the task of colorization. In terms of the L1 distance, the best performance is achieved on the ResNet18 U-net with pre-trained weights. This goes to prove the unreliability of distance metrics in model performance evaluation. The model, although quantitatively, performs better than the fine-tuned model but in reality, fails to produce images that might be visually appealing. The L2 distance metric shows how the fine-tuned model might, in reality, be fitting slightly better over the data to predict correct color combination as its output. We still consider the results from the fine tuned model to be better than the other performing models and further investigate the per-channel predictions by the model.
 
 \input{tables/channel_wise_color}
 
