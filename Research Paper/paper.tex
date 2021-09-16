@@ -19,31 +19,31 @@
 \title{Astronomical Image colorization and up-scaling with generative adversarial networks\\
 }
 
-\author{\IEEEauthorblockN{1\textsuperscript{st} Shreyas Kalvankar \IEEEauthorrefmark{1}}
+\author{\IEEEauthorblockN{Shreyas Kalvankar \IEEEauthorrefmark{1}}
 \IEEEauthorblockA{\textit{Dept. of Computer Engineering} \\
 \textit{K. K. Wagh Institute of Engineering Education and Research}\\
 Nashik, India \\
 shreyas.kalvankar@kkwagh.edu.in}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Snehal Kamalapur\IEEEauthorrefmark{1}}
+\IEEEauthorblockN{Snehal Kamalapur\IEEEauthorrefmark{1}}
 \IEEEauthorblockA{\textit{Dept. of Computer Engineering} \\
 \textit{K. K. Wagh Institute of Engineering Education and Research}\\
 Nashik, India \\
 smkamalapur@kkwagh.edu.in}
 \and
-\IEEEauthorblockN{3\textsuperscript{rd} Hrushikesh Pandit\IEEEauthorrefmark{1}}
+\IEEEauthorblockN{Hrushikesh Pandit\IEEEauthorrefmark{1}}
 \IEEEauthorblockA{\textit{Dept. of Computer Engineering} \\
 \textit{K. K. Wagh Institute of Engineering Education and Research}\\
 Nashik, India \\
 hrushikesh.pandit@kkwagh.edu.in}
 \and
-\IEEEauthorblockN{4\textsuperscript{th} Pranav Parwate\IEEEauthorrefmark{1}}
+\IEEEauthorblockN{Pranav Parwate\IEEEauthorrefmark{1}}
 \IEEEauthorblockA{\textit{Dept. of Computer Engineering} \\
 \textit{K. K. Wagh Institute of Engineering Education and Research}\\
 Nashik, India \\
 pranav.parwate@kkwagh.edu.in}
 \and
-\IEEEauthorblockN{5\textsuperscript{th} Atharva Patil\IEEEauthorrefmark{1}}
+\IEEEauthorblockN{Atharva Patil\IEEEauthorrefmark{1}}
 \IEEEauthorblockA{\textit{Dept. of Computer Engineering} \\
 \textit{K. K. Wagh Institute of Engineering Education and Research}\\
 Nashik, India \\
@@ -61,8 +61,8 @@ Neural Networks, Generative Models, Image Colorization, Image Super-resolution
 \end{IEEEkeywords}
 
 \section{Introduction}
-Automated colorization of gray scale images has been subjected to much research within the computer vision and machine learning communities. Beyond simply being fascinating from an aesthetic and artificial intelligence perspective, such capability has broad practical applications. It is an area of research that possesses great potentials in applications: from black and white photo reconstruction, image augmentation, video restoration to image enhancement for improved interpretability. 
-Image downscaling is an innately lossy process. The principal objective of super resolution imaging is to reconstruct a low resolution image into a high resolution one based on a set of low-resolution images to rectify the limitations that existed while the procurement of the original low-resolution images. This is to insure better visualization and recognition for either scientific or non-scientific purposes. Even if an upscaling algorithm is particularly good, there will always be some amount of high frequency data lost from a downscale-upscale function performed on the image. Ultimately, even the best upscaling algorithms are unable to effectively reconstruct data that does not exist. Traditional methods for image upsampling rely on low-information, smooth interpolation between known pixels. Such methods can be treated as a convolution with a kernel encoding no information about the original image. A solution to the problem is by using Generative Adversarial Networks (GANs) to hallucinate high frequency data in a super scaled image that does not exist in the smaller image. Even though they increase the resolution of an image, they fail to produce the clarity desired in the super-resolution task. By using the above mentioned method, not a perfect reconstruction can be obtained albeit instead a rather plausible guess can be made at what the lost data might be, constrained to reality by a loss function penalizing deviations from the ground truth image.\\  
+The problem of colorization of gray scale images with an automated algorithm has been under much research within the machine learning and computer vision communities. Beyond simply being fascinating from an aesthetic and artificial intelligence perspective, such capability has broad practical applications. It is an area of research that possesses great potentials in applications: from black and white photo reconstruction, image augmentation, image enhancement to video restoration for improved interpretability. 
+Image downscaling is an innately lossy process. The principal objective of super resolution imaging is to reconstruct a low resolution image into a high resolution one based on a set of low-resolution images to rectify the limitations that existed while the procurement of the original low-resolution images. This is to insure better visualization and recognition for either scientific or non-scientific purposes. Even if an upscaling algorithm is particularly good, there will always be some data loss from high frequency due to a downscale-upscale function performed on the image. Ultimately, even the best upscaling algorithms are unable to effectively reconstruct data that does not exist. Conventional methods for image upscaling rely on low-information and a smooth interpolation between known pixels. Thes methods can effectively be treated as a convolution with a kernel which encodes no information about the original image. The problem, has one of it's solutions as and can be solved by using Generative Adversarial Networks (GANs) to hallucinate high frequency data in a super scaled image that does not exist in the smaller image. Even though they increase the resolution of an image, they do not achieve the desired clarity in the super-resolution task. By using the above mentioned method, not a perfect reconstruction can be obtained albeit instead a rather plausible guess can be made at what the lost data might be, constrained to reality by a loss function penalizing deviations from the ground truth image.\\  
 \begin{figure}[!htb]
 	\centering
 	\begin{subfigure}[t]{0.4\textwidth}
@@ -81,7 +81,7 @@ Image downscaling is an innately lossy process. The principal objective of super
 	\caption{Results of fine-tuned ResNet18 in L*a*b colorspace compared with ground truth images}
 \end{figure}
 
-A huge number of raw images are present unprocessed and unnoticed in the Hubble Legacy Archives. These raw images are typically black and white, low-resolution and unfit to be shared with the world. It takes huge amounts of hours to process them. This processing is necessary because it's difficult for astronomers to distinguish objects from the raw images. Random and synthetic noise from the sensors in the telescope, changing optical characteristics in the system and noise from other bodies in the universe all make the processing further necessary. Furthermore, for the process of highlighting small features that ordinarily wouldn't be able to be picked out against noise of the image, we need colorization. The processing of the images is so time consuming that the images are rarely seen by human eyes. The problem is only likely to get worse. Not only is new data being continuously produced by Hubble Telescope, but new telescopes are soon to come online. A simplification of image processing by using artificial image colorization and super-resolution can be done in an automated fashion to make it easier for astronomers to visually identify and analyze objects in Hubble dataset.
+As noted in \citep{Gao2019astronomical}, a huge number of raw images are present unprocessed and unnoticed in the Hubble Legacy Archives. These raw images are typically black and white, low-resolution and unfit to be shared with the world. It takes huge amounts of hours to process them. This processing is necessary because it's difficult for astronomers to distinguish objects from the raw images. The processing is further made necessary owing to noise from other bodies in the universe, changing optical characteristics in the system and random \& synthetic noise from the sensors in the telescope. Furthermore, for the process of highlighting small features that ordinarily wouldn't be able to be picked out against noise of the image, we need colorization. The processing of the images is so time consuming that the images are rarely seen by human eyes. Not only is new data being continuously produced by Hubble Telescope, but new telescopes are soon to come online. This goes to show that the problem will likely get worse. A simplification of image processing by using artificial image colorization and super-resolution can be done in an automated fashion to make it easier for astronomers to visually identify and analyze objects in Hubble dataset.
 \section{Literature Review}
 \subsection{Image Colorization}
 \textit{Hint Based Colorization}\\
@@ -129,7 +129,7 @@ However, as each low resolution image adds a few new details before finally debl
 	\label{rgb_colorspace}
 \end{center}
 \end{figure}
-In \textbf{L*a*b} color space, we have three numbers for each pixel but these numbers have different meanings. The first channel, L, encodes the \textbf{Lightness} of each pixel and when we visualize this channel it appears as a black and white image. 
+In \textbf{L*a*b} color space, we have three numbers for each pixel but these numbers have different meanings.L, the first channel, has the \textbf{Lightness} of each pixel encoded and when we visualize this channel it appears as a black and white image. 
 \begin{figure}[!htb]
 \begin{center}
 	\includegraphics[width=0.5\textwidth]{figures/Lab_colorspace}
@@ -137,8 +137,8 @@ In \textbf{L*a*b} color space, we have three numbers for each pixel but these nu
 	\label{lab_colorspace}
 \end{center}
 \end{figure}
-The \textbf{*a and *b} channels encode how much \textbf{green-red} and \textbf{yellow-blue} each pixel is, respectively.
-\cite{guadarrama2017pixcolor,isola2018imagetoimage} propose the use of L*a*b color space instead of RGB to train the models. Intuitively, to the train a model for colorization, we should give it a grayscale image and we hope that it colors it. In the L*a*b colorspace, the model is fed the L channel, which is essentially a grayscale image, and we perform computations to predict the other two channels (*a and *b). After the predictions, we concatenate the channels and get a colorful image. In case of RGB, there is a need to explicitly convert the three channels down to 1 to make it a grayscale image and then feed it to the network hoping that it predicts three numbers per pixel. This is an unstable task due to sheer increase in volume of combinations from two numbers to three.
+The \textbf{*a and *b} channels encode in them exactly how much \textbf{green-red} and \textbf{yellow-blue} each pixel is, respectively.
+\cite{guadarrama2017pixcolor,isola2018imagetoimage} propose the use of L*a*b color space instead of RGB to train the models. Intuitively, to the train a model for colorization, a grayscale image should be fed to it and we hope that it colors it. In the L*a*b colorspace, the model is fed the L channel, which is essentially a grayscale image, and we perform computations to predict the other two channels (*a and *b). After the predictions, we concatenate the channels and get a colorful image. In case of RGB, there is a need to explicitly convert the three channels down to 1 to make it a grayscale image and then feed it to the network hoping that it predicts three numbers per pixel. This is an unstable task due to sheer increase in volume of combinations from two numbers to three.
 
 We train models using both color spaces and compare their performance.
 \subsection{Transferred learning and model tweaking}
@@ -251,7 +251,7 @@ In table \ref{tab:lab_color_results}, L1 distance, we can see the performance of
 We can observe the comparative results of ResNet18 pre-trained model and the fine-tuned model. It can be concluded from the observations that the fine-tuned model performs better at predicting the Red color channel but suffers in Green and Blue.
 
 \input{tables/FID_color}
-We use Fréchet inception distance (FID) to evaluate the distribution of generated images with the distribution of real images. Table \ref{tab:colorization_FID} helps us see that the fine-tuned U-net with ResNet-18 as it's backbone achieves the least FID score. This still shows that while this model is very adept at hallucinating images but is still not able to predict accurate color values. 
+We use Fréchet inception distance (FID) to evaluate the distribution of generated images with the distribution of real images. Table \ref{tab:colorization_FID} helps us see that the fine-tuned U-net with ResNet-18 as it's backbone achieves the least FID score. This shows that while this model is very adept at hallucinating images it's still not able to predict accurate color values. 
 
 \subsection{Image Super Resolution}
 \hspace*{0.25 in}We implement the basic SR-GAN proposed by Ledig and train it to improve super-resolution task. We compare the trained model with pre-trained SRGAN model, EDSR-GAN proposed by \cite{lim2017enhanced} and WDSR-GAN proposed by \cite{yu2018wide}.
@@ -303,7 +303,7 @@ Having said that, if we look at the FID score listed in table \ref{tab:super-res
 \hspace*{0.25 in}While studying and improving the performance of these models, we explore performance metrics of GANs and evaluation methodologies implemented to test out conditional GANs. It is evident that the loss curves of generator and discriminator do not provide us with any intuition about the model performance. We also discover that standard distance metrics cannot be used to evaluate GANs and quantitative methods that exist to evaluate GANs are unreliable. We prove so by contradiction of qualitative samples and quantitative measurements of the best performing architecture for colorization models. However, we observe that quantitative estimation is quite reliable for the problem of single image super-resolution and can be helped to determine which model is better suited for the task.
 
 \section{Future Scope}
-\hspace*{0.25 in}Though we obtain moderately good results, a vast amount of algorithms still remain unscratched. A more powerful model such as SE-ResNext, EfficientNet and more such state-of-the-art models can be implemented and trained over millions of images from the Imagenet. With even more hardware resources and availability of data, we can explore computationally heavy models for a better approximation. An image stitching algorithm can be applied on the produced images to generate large scale astronomical images for scientific study. Colorization can be improved by the virtue of exploring different loss functions using weighted losses to reduce loss problem for low saturation regions. We can introduce a gradient penalty for the SRGAN architecture and include the WGAN \citep{arjovsky2017wasserstein} which will stabilize the discriminator to stay within the space of 1-Lipschitz function. Progressively growing GANs \citep{karras2018progressive} can be applied so that the dimensions can be further improved with more stability and greater sharpness.
+\hspace*{0.25 in}Though we obtain moderately good results, a vast amount of algorithms still remain unscratched. A more powerful model such as SE-ResNext, EfficientNet and more such state-of-the-art models can be implemented and trained over millions of images from the Imagenet. With even more hardware resources and availability of data, we can explore computationally heavy models for a better approximation. With help of an image stitching algorithm, produced images can be stitched together to generate large scale astronomical images for scientific study. Colorization can be improved by the virtue of exploring different loss functions using weighted losses to reduce loss problem for low saturation regions. We can introduce a gradient penalty for the SRGAN architecture and include the WGAN \citep{arjovsky2017wasserstein} which will stabilize the discriminator by enforcing conditions which result in a Lipschitz constant $<1$, so that it will stay within the space of 1-Lipschitz function. Progressively growing GANs \citep{karras2018progressive} can be applied so that the dimensions can be further improved with more stability and greater sharpness.
 
 \bibliographystyle{dcu}
 \bibliography{biblo.bib}
