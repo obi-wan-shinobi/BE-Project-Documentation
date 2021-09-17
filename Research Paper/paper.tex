@@ -82,6 +82,24 @@ Image downscaling is an innately lossy process. The principal objective of super
 \end{figure}
 
 As noted in \citep{Gao2019astronomical}, a huge number of raw images are present unprocessed and unnoticed in the Hubble Legacy Archives. These raw images are typically black and white, low-resolution and unfit to be shared with the world. It takes huge amounts of hours to process them. This processing is necessary because it's difficult for astronomers to distinguish objects from the raw images. The processing is further made necessary owing to noise from other bodies in the universe, changing optical characteristics in the system and random \& synthetic noise from the sensors in the telescope. Furthermore, for the process of highlighting small features that ordinarily wouldn't be able to be picked out against noise of the image, we need colorization. The processing of the images is so time consuming that the images are rarely seen by human eyes. Not only is new data being continuously produced by Hubble Telescope, but new telescopes are soon to come online. This goes to show that the problem will likely get worse. A simplification of image processing by using artificial image colorization and super-resolution can be done in an automated fashion to make it easier for astronomers to visually identify and analyze objects in Hubble dataset.
+\begin{figure}[!htb]
+	\centering
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/original_sample}
+		\caption{Original image}
+		\label{fig: original_sample}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{figures/GAN_output_sample}
+		\caption{GAN output}
+		\label{fig: gan_output_sample}
+	\end{subfigure}
+	\caption{Fig \ref{fig: original_sample} is the original image and fig \ref{fig: gan_output_sample} is the image produced by our GAN}
+	\label{fig: sample_comp}
+\end{figure}
+
 \section{Literature Review}
 \subsection{Image Colorization}
 \textit{Hint Based Colorization}\\
