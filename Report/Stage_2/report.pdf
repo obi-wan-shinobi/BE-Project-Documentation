@@ -28400,8 +28400,13 @@ endobj
 <<
 /Producer (MiKTeX pdfTeX-1.40.21)
 /Author()/Title()/Subject()/Creator(LaTeX with hyperref)/Keywords()
+<<<<<<< HEAD
 /CreationDate (D:20210916004309+05'30')
 /ModDate (D:20210916004309+05'30')
+=======
+/CreationDate (D:20210923234257+05'30')
+/ModDate (D:20210923234257+05'30')
+>>>>>>> Shreyas
 /Trapped /False
 /PTEX.Fullbanner (This is MiKTeX-pdfTeX 4.1.0 (1.40.21))
 >>
@@ -30078,7 +30083,11 @@ trailer
 << /Size 1666
 /Root 1664 0 R
 /Info 1665 0 R
+<<<<<<< HEAD
 /ID [<97AAF8109D14648BB0759CC74FEC7F67> <97AAF8109D14648BB0759CC74FEC7F67>] >>
+=======
+/ID [<9B4CF025E2052AB2F208A9E1993BF3BC> <9B4CF025E2052AB2F208A9E1993BF3BC>] >>
+>>>>>>> Shreyas
 startxref
 4070620
 %%EOF
