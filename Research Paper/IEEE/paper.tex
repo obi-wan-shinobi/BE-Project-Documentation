@@ -168,7 +168,7 @@ We train models using both color spaces and compare their performance.
 \begin{figure*}[!htb]
     \centering
     \input{figures/tex_files/gan_visualization.tex}
-    \caption{Approach for image colorization using conditional GANs}
+    \caption{Approach for image colorization using conditional GANs. A sample grayscale image is provided as an input to the generator and the generated image along with the ground truth is fed to the discriminator. The probability \textit{p} is the probability that the discriminator thinks the two images are similar.}
     \label{fig:gan_visualization}
 \end{figure*}
   Let $x \in X$ be a low resolution or a grayscale image and $y \in Y$ be it's underlying distribution from the latent space Y. Generator $G$ takes in input $x$ and produces an output $\hat{y}$. We define the mapping $x \rightarrow \hat{y}$ in the following manner:
