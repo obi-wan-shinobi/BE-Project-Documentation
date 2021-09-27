@@ -1,0 +1,16 @@
+\begin{table}[!htb]
+\centering
+\setlength{\tabcolsep}{4pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{tabular}{c | c }
+        \hline
+        \textbf{Model} & \textbf{FID}\\
+        \hline
+        ResNet-18 (Pre-trained) & 66.3568\\
+        ResNet-18 (Fine-tuned) & 42.1593\\
+        U-net & 152.7216\\
+        \hline
+    \end{tabular}
+\caption{Colorization: Fréchet inception distance between model outputs and original images}
+\label{tab:colorization_FID}
+\end{table}

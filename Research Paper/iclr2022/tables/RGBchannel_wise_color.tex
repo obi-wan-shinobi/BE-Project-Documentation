@@ -1,0 +1,20 @@
+\begin{table}[!htb]
+\setlength{\tabcolsep}{4pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\small
+\centering
+    \begin{tabular}{c | c c c| c c c}
+        \hline
+        \hline
+        \setlength{\tabcolsep}{2pt}
+        \multirow{2}{*}{Model} & 
+            \multicolumn{3}{c|}{\footnotesize{L1 Distance}} & \multicolumn{3}{c}{\small L2 Distance}\\
+            & \footnotesize{R} & \footnotesize{G} & \footnotesize{B} & \footnotesize{R} & \footnotesize{G} & \footnotesize{B}\\
+        \hline
+        \footnotesize{ResNet-18 (PT)}  & \footnotesize{69.2401} & \footnotesize{36.5852} & \footnotesize{87.7973} & \footnotesize{3.2890} & \footnotesize{1.0439} & \footnotesize{3.9785}\\
+        \footnotesize{ResNet-18 (FT)} & \footnotesize{64.6078} & \footnotesize{38.5994} & \footnotesize{92.1283} & \footnotesize{3.4531} & \footnotesize{1.0253} & \footnotesize{3.8046}\\
+        \hline
+    \end{tabular}
+\caption{L1 \& L2 channel wise distances in RGB colorspace (PT refers to Pre-trained and FT refers to Fine-tuned)}
+\label{tab:rgb_color_results_pre_fine}
+\end{table}

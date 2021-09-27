@@ -7,4 +7,5 @@ The documents can be found in:
 - [Literature Review](Literature%20Review/Review.pdf)
 - [Project Stage 1 report](Report/Stage_1/report.pdf)
 - [Project Final Report](Report/Stage_2/report.pdf)
-- [Research Paper](Research%20Paper/paper.pdf)
+- [Research Paper (IEEE)](Research%20Paper/IEEE/paper.pdf)
+- [Research Paper (ICLR)](Research%20Paper/iclr2022/iclr2022_conference.pdf)
