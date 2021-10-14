@@ -1,0 +1,17 @@
+\begin{table}[!htb]
+\centering
+\setlength{\tabcolsep}{4pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{tabular}{c | c }
+        \hline
+        \textbf{Model} & \textbf{FID}\\
+        \hline
+        Ledig SRGAN (Fine-tuned) & 75.5873\\
+        Ledig SRGAN (Pre-trained) & 89.8443\\
+        ED-SRGAN & 159.5770\\
+        WD-SRGAN & 127.2920\\
+        \hline
+    \end{tabular}
+\caption{Super-resolution: Fréchet inception distance between model outputs and original images}
+\label{tab:super-resolution_FID}
+\end{table}
