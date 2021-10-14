@@ -9,3 +9,4 @@ The documents can be found in:
 - [Project Final Report](Report/Stage_2/report.pdf)
 - [Research Paper (IEEE)](Research%20Paper/IEEE/paper.pdf)
 - [Research Paper (ICLR)](Research%20Paper/iclr2022/iclr2022_conference.pdf)
+- [Research Paper (CVPR)](Research%20Paper/CVPR/PaperForReview.pdf)
