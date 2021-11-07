@@ -1,16 +1,17 @@
 \begin{table}[!htb]
 \centering
-\setlength{\tabcolsep}{6pt} % Default value: 6pt
-\renewcommand{\arraystretch}{1.5} % Default value: 1
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{0.9} % Default value: 1
     \begin{tabular}{c | c | c }
         \hline
-        \textbf{Model} & \textbf{
-        L1 Distance} & \textbf{L2 Distance}\\
         \hline
-        \small{Ledig SRGAN (Fine-tuned)} & 87.1090 & 3.754\\
-        \small{Ledig SRGAN (Pre-trained)} & 114.8043 & 5.953\\
-        ED-SRGAN & 80.9414 & 3.684\\
-        WD-SRGAN & 79.7262 & 3.627\\
+        \footnotesize{\textbf{Model}} & \footnotesize{\textbf{
+        L1 Distance}} & \footnotesize{\textbf{L2 Distance}}\\
+        \hline
+        \footnotesize{Ledig SRGAN (Fine-tuned)} & \footnotesize{87.1090} & \footnotesize{3.754}\\
+        \footnotesize{Ledig SRGAN (Pre-trained)} & \footnotesize{114.8043} & \footnotesize{5.953}\\
+        \footnotesize{ED-SRGAN} & \footnotesize{80.9414} & \footnotesize{3.684}\\
+        \footnotesize{WD-SRGAN} & \footnotesize{79.7262} & \footnotesize{3.627}\\
         \hline
     \end{tabular}
 \caption{Super-Resolution: Per-pixel Average L1 \& L2 distance between generated images and ground truth}

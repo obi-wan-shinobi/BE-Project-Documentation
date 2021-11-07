@@ -1,15 +1,16 @@
 \begin{table}[!htb]
 \centering
-\setlength{\tabcolsep}{4pt} % Default value: 6pt
-\renewcommand{\arraystretch}{1.5} % Default value: 1
-\begin{tabular}{c | c }
+\setlength{\tabcolsep}{8pt} % Default value: 6pt
+\renewcommand{\arraystretch}{0.8} % Default value: 1
+\begin{tabular}{p{0.25\textwidth} | p{0.15\textwidth} }
         \hline
-        \textbf{Model} & \textbf{FID}\\
         \hline
-        Ledig SRGAN (Fine-tuned) & 75.5873\\
-        Ledig SRGAN (Pre-trained) & 89.8443\\
-        ED-SRGAN & 159.5770\\
-        WD-SRGAN & 127.2920\\
+        \centering\footnotesize{\textbf{Model}} & \footnotesize{\textbf{FID}}\\
+        \hline
+        \centering\footnotesize{Ledig SRGAN (Fine-tuned)} & \footnotesize{75.5873}\\
+        \centering\footnotesize{Ledig SRGAN (Pre-trained)} & \footnotesize{89.8443}\\
+        \centering\footnotesize{ED-SRGAN} & \footnotesize{159.5770}\\
+        \centering\footnotesize{WD-SRGAN} & \footnotesize{127.2920}\\
         \hline
     \end{tabular}
 \caption{Super-resolution: Fréchet inception distance between model outputs and original images}
