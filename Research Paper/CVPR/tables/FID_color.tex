@@ -1,14 +1,15 @@
 \begin{table}[!htb]
 \centering
-\setlength{\tabcolsep}{4pt} % Default value: 6pt
-\renewcommand{\arraystretch}{1.5} % Default value: 1
-\begin{tabular}{c | c }
+\setlength{\tabcolsep}{12pt} % Default value: 6pt
+\renewcommand{\arraystretch}{0.8} % Default value: 1
+\begin{tabular}{p{0.2\textwidth} | p{0.1\textwidth} }
         \hline
-        \textbf{Model} & \textbf{FID}\\
         \hline
-        ResNet-18 (Pre-trained) & 66.3568\\
-        ResNet-18 (Fine-tuned) & 42.1593\\
-        U-net & 152.7216\\
+        \centering\footnotesize{\textbf{Model}} & \footnotesize{\textbf{FID}}\\
+        \hline
+        \footnotesize{ResNet-18 (Pre-trained)} & \footnotesize{66.3568}\\
+        \footnotesize{ResNet-18 (Fine-tuned)} & \footnotesize{42.1593}\\
+        \footnotesize{U-net} & \footnotesize{152.7216}\\
         \hline
     \end{tabular}
 \caption{Colorization: Fréchet inception distance between model outputs and original images}
