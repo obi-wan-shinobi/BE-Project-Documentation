@@ -1,0 +1,85 @@
+% !TeX program = pdflatex
+% !BIB program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_US
+\documentclass[english,utf8,biblatex]{lni}
+\usepackage{booktabs}
+\addbibresource{references.bib}
+
+\begin{document}
+
+\title[Short Title]{A Very Long Title Across Multiple Lines With Many Words and Even More Characters}
+\author[Firstname Lastname \and Firstname Lastname]{%
+  Firstname Lastname\footnote{University, Department, Address, Country \email{author1@university.edu}} \and
+  Firstname Lastname\footnote{University, Department, Address, Country \email{author2@university.edu}}
+}
+\startpage{1}
+\editor{Editor et al.}
+\booktitle{INFORMATIK 2022 Workshops}
+\yearofpublication{2022}
+\lnidoi{12.34567/provided-by-the-editors}
+\maketitle
+
+\begin{abstract}
+The abstract should contain between 70 und 150 words.
+\end{abstract}
+
+\begin{keywords}
+LNI guidelines \and template
+\end{keywords}
+
+\section{Usage}
+\Cref{fig:demo} shows a figure. \Cref{tab:demo} shows a table. Other functionality is demonstrated in \Cref{sec:demos}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.3\textwidth]{example-image}
+  \caption{A demo figure}
+  \label{fig:demo}
+\end{figure}
+
+\begin{table}
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    header & line \\
+    \midrule
+    just & some \\
+    example & content \\
+    \bottomrule
+  \end{tabular}
+  \caption{A demo table}
+  \label{tab:demo}
+\end{table}
+
+The \texttt{lni} document class provides two environments for typesetting program code.
+
+\begin{verbatim}
+public class Hello {
+    public static void main (String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+\end{verbatim}
+
+\begin{lstlisting}[caption={A listing with a caption}, label=L1, language=Java]
+public class Hello {
+    public static void main (String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+\end{lstlisting}
+
+\section{Another Section}
+\label{sec:demos}
+You can provide references as usual \cite{Gl01}. If you intend to use a reference as the subject or an object of a sentence, use the \texttt{\textbackslash{}citet} command, like \citet{ABC01} do.
+
+\begin{equation}
+  \lambda = 2 - \alpha
+\end{equation}
+
+A more detailed template (in German) of the \texttt{lni} document class can be found online\footnote{\url{https://www.ctan.org/pkg/lni}}.
+
+\printbibliography
+
+\end{document}
